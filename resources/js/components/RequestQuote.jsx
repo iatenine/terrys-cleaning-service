@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import emailjs from "emailjs-com";
 
 export const RequestQuote = () => {
     const [validName, setValidName] = useState(false);
@@ -7,10 +8,37 @@ export const RequestQuote = () => {
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [message, setMessage] = useState("");
-
-    // Email validation regex
+    const form = useRef();
     const emailRegex =
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    const resetForm = () => {
+        setName("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+    };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_98es1g8",
+                "template_7kq84qp",
+                form.current,
+                "user_b1sE1QHEdnbuzTIQ6wIH0"
+            )
+            .then(
+                (result) => {
+                    // Nothing to do here
+                },
+                (error) => {
+                    console.error(error.text);
+                }
+            );
+        resetForm();
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -54,7 +82,7 @@ export const RequestQuote = () => {
 
     return (
         <div id="request">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
                     <input
