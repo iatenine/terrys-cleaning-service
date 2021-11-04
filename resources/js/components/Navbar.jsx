@@ -6,13 +6,13 @@ function Navbar() {
         <nav className="container">
             <ul>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li>
-                    <a href="#">Request a Quote</a>
+                    <a href="#request">Request a Quote</a>
                 </li>
             </ul>
         </nav>

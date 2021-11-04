@@ -5285,6 +5285,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var About = function About() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    id: "about",
     children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore et praesentium autem assumenda aspernatur quia at consequatur. Recusandae delectus eos voluptate, officia nostrum blanditiis quo quasi molestias ad veritatis error qui, nesciunt libero aut, voluptatum est aliquam quae dolores ex? Eos modi voluptatum saepe maiores, similique repellendus error dolorem."
   });
 };
@@ -5333,7 +5334,7 @@ var Hero = function Hero() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     style: {
       width: "100%",
-      height: "40vh",
+      height: "70vh",
       textAlign: "center",
       backgroundColor: "#f5f5f5"
     },
@@ -5367,17 +5368,17 @@ function Navbar() {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "#",
+          href: "#about",
           children: "About"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "#",
+          href: "#services",
           children: "Services"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-          href: "#",
+          href: "#request",
           children: "Request a Quote"
         })
       })]
@@ -5407,6 +5408,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var RequestQuote = function RequestQuote() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    id: "request",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("form", {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         className: "form-group",
@@ -5534,6 +5536,7 @@ var Services = function Services() {
     /*#__PURE__*/
     // List off services
     (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      id: "services",
       className: "services",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h2", {
         children: "Services"

@@ -2,7 +2,7 @@ import React from "react";
 
 export const RequestQuote = () => {
     return (
-        <div>
+        <div id="request">
             <form>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>

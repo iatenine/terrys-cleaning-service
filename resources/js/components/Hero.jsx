@@ -5,7 +5,7 @@ export const Hero = () => {
         <div
             style={{
                 width: "100%",
-                height: "40vh",
+                height: "70vh",
                 textAlign: "center",
                 backgroundColor: "#f5f5f5",
             }}

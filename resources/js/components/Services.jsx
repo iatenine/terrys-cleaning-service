@@ -3,7 +3,7 @@ import React from "react";
 export const Services = () => {
     return (
         // List off services
-        <div className="services">
+        <div id="services" className="services">
             <h2>Services</h2>
             <ul>
                 <li>

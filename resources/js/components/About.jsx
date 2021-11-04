@@ -2,7 +2,7 @@ import React from "react";
 
 export const About = () => {
     return (
-        <div>
+        <div id="about">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
             inventore et praesentium autem assumenda aspernatur quia at
             consequatur. Recusandae delectus eos voluptate, officia nostrum
