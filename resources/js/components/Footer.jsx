@@ -17,7 +17,7 @@ export const Footer = () => {
             >
                 249 Ligustrum Ln #H103
                 <br />
-                Merritt Island, FL 34335
+                Merritt Island, FL 32953
                 <br />
                 321-350-7360
                 <br />
