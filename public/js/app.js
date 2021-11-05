@@ -5283,10 +5283,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
+
 var About = function About() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
     id: "about",
-    children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore et praesentium autem assumenda aspernatur quia at consequatur. Recusandae delectus eos voluptate, officia nostrum blanditiis quo quasi molestias ad veritatis error qui, nesciunt libero aut, voluptatum est aliquam quae dolores ex? Eos modi voluptatum saepe maiores, similique repellendus error dolorem."
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("hr", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      children: "Founded in 2003, Terry's Maid Service is one of the most trusted and reliable cleaning services in the area. Serving Merritt Island, Cocoa Beach and Cape Canaveral, Terry's Maid Service is locally owned and operated, providing high-quality move-in/move-out cleaning services. We'll take care of what was left behind so you can focus on what's ahead!"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "mt-2 text-center",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("strong", {
+        children: ["To get started with a free estimate, click", " ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
+          href: "#request",
+          className: "text-light",
+          children: "here"
+        }), " ", "or call ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("phone", {
+          children: "321-350-7360"
+        }), " and ask for Terry"]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("hr", {})]
   });
 };
 
@@ -5314,12 +5328,12 @@ var Footer = function Footer() {
       style: {
         "float": "left"
       },
-      children: "\xA9 2020 Terry's Maid Service"
+      children: "\xA9 2021 Terry's Maid Service"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
       style: {
         "float": "right"
       },
-      children: ["249 Ligustrum Ln #H103", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "Merritt Island, FL 34335", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "321-350-7360", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "Operating Hours: Mon-Fri 9am-5pm"]
+      children: ["249 Ligustrum Ln #H103", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "Merritt Island, FL 32953", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "321-350-7360", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "Operating Hours: Mon-Fri 9am-5pm"]
     })]
   });
 };
@@ -5561,9 +5575,11 @@ var RequestQuote = function RequestQuote() {
     }
   };
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     id: "request",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h2", {
+      children: "Request a Quote"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("form", {
       ref: form,
       onSubmit: sendEmail,
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -5632,7 +5648,7 @@ var RequestQuote = function RequestQuote() {
         className: "btn btn-secondary w-100 mt-1",
         children: "Reset"
       })]
-    })
+    })]
   });
 };
 
@@ -5701,7 +5717,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Services = function Services() {
-  var services = ["Move-In/Move-Out", "Carpet Cleaning", "Tile Cleaning", "Cleaning"];
+  var services = ["Move-In/Move-Out", "Carpet Cleaning", "Free Estimates"];
   return (
     /*#__PURE__*/
     // List off services

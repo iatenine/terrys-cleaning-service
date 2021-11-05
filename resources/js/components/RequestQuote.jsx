@@ -69,6 +69,7 @@ export const RequestQuote = () => {
 
     return (
         <div id="request">
+            <h2>Request a Quote</h2>
             <form ref={form} onSubmit={sendEmail}>
                 <div className="form-group">
                     <label htmlFor="name">Name *</label>

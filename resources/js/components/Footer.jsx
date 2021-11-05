@@ -8,7 +8,7 @@ export const Footer = () => {
                     float: "left",
                 }}
             >
-                &copy; 2020 Terry's Maid Service
+                &copy; 2021 Terry's Maid Service
             </span>
             <span
                 style={{

@@ -1,12 +1,7 @@
 import React from "react";
 
 export const Services = () => {
-    const services = [
-        "Move-In/Move-Out",
-        "Carpet Cleaning",
-        "Tile Cleaning",
-        "Cleaning",
-    ];
+    const services = ["Move-In/Move-Out", "Carpet Cleaning", "Free Estimates"];
 
     return (
         // List off services

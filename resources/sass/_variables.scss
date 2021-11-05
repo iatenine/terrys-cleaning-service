@@ -20,7 +20,6 @@ $body-bg: $blue; // Background color
 $body-color: white; // Standard text color
 
 li {
-    list-style: none;
     display: inline;
     padding-right: 1rem;
 }
@@ -45,4 +44,9 @@ li > a {
 .nav-link:hover {
     text-decoration: none;
     color: $body-color;
+}
+
+#about {
+    font-size: 1.5rem;
+    padding: 2rem;
 }
