@@ -25,25 +25,13 @@ li {
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+    color: $body-color !important;
 }
 
-li > a {
+// Targets navbar links specifically without introducing Bootstrap's default styles
+nav > ul > li > a {
     color: $body-color;
-}
-
-.nav {
-    display: inline;
-}
-
-.nav-link {
-    color: $body-color;
-}
-
-.nav-link:hover {
-    text-decoration: none;
-    color: $body-color;
+    text-decoration: none !important;
 }
 
 #about {

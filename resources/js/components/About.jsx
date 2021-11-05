@@ -1,8 +1,9 @@
 import React from "react";
+import { Phone } from "./Phone";
 
 export const About = () => {
     return (
-        <div id="about">
+        <main id="about">
             <hr />
             <div>
                 Founded in 2003, Terry's Maid Service is one of the most trusted
@@ -18,10 +19,10 @@ export const About = () => {
                     <a href="#request" className="text-light">
                         here
                     </a>{" "}
-                    or call <phone>321-350-7360</phone> and ask for Terry
+                    or call <Phone /> and ask for Terry
                 </strong>
             </div>
             <hr />
-        </div>
+        </main>
     );
 };

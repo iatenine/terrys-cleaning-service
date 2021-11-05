@@ -1,4 +1,5 @@
 import React from "react";
+import { Phone } from "./Phone";
 
 export const Footer = () => {
     return (
@@ -19,7 +20,7 @@ export const Footer = () => {
                 <br />
                 Merritt Island, FL 32953
                 <br />
-                321-350-7360
+                <Phone />
                 <br />
                 Operating Hours: Mon-Fri 9am-5pm
             </span>

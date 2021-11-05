@@ -6,25 +6,12 @@ li {
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  color: white !important;
 }
 
-li > a {
+nav > ul > li > a {
   color: white;
-}
-
-.nav {
-  display: inline;
-}
-
-.nav-link {
-  color: white;
-}
-
-.nav-link:hover {
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
 }
 
 #about {
