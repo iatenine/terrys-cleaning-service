@@ -5520,19 +5520,13 @@ var RequestQuote = function RequestQuote() {
 
   var sendEmail = function sendEmail(e) {
     e.preventDefault();
+    if (!validName || !validEmail) return; // Prevent submission if form is invalid
+
     emailjs_com__WEBPACK_IMPORTED_MODULE_1__["default"].sendForm("service_98es1g8", "template_7kq84qp", form.current, "user_b1sE1QHEdnbuzTIQ6wIH0").then(function (result) {// Nothing to do here
     }, function (error) {
       console.error(error.text);
     });
     resetForm();
-  };
-
-  var handleSubmit = function handleSubmit(e) {
-    e.preventDefault(); // TODO: send email
-
-    if (!validName || !validEmail) return; // Prevent submission if form is invalid
-
-    console.log("submit");
   };
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
@@ -5579,7 +5573,7 @@ var RequestQuote = function RequestQuote() {
           children: "Name *"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
           type: "text",
-          className: "form-control bg-light",
+          className: "form-control bg-light text-dark",
           id: "name",
           name: "name",
           placeholder: "Enter name",
@@ -5593,7 +5587,7 @@ var RequestQuote = function RequestQuote() {
           children: "Email *"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
           type: "email",
-          className: "form-control bg-light",
+          className: "form-control bg-light text-dark",
           id: "email",
           name: "email",
           placeholder: "Enter email",

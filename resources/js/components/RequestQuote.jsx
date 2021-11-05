@@ -21,6 +21,7 @@ export const RequestQuote = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        if (!validName || !validEmail) return; // Prevent submission if form is invalid
 
         emailjs
             .sendForm(
@@ -38,13 +39,6 @@ export const RequestQuote = () => {
                 }
             );
         resetForm();
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // TODO: send email
-        if (!validName || !validEmail) return; // Prevent submission if form is invalid
-        console.log("submit");
     };
 
     useEffect(() => {
@@ -81,7 +75,7 @@ export const RequestQuote = () => {
                     <label htmlFor="name">Name *</label>
                     <input
                         type="text"
-                        className="form-control bg-light"
+                        className="form-control bg-light text-dark"
                         id="name"
                         name="name"
                         placeholder="Enter name"
@@ -93,7 +87,7 @@ export const RequestQuote = () => {
                     <label htmlFor="email">Email *</label>
                     <input
                         type="email"
-                        className="form-control bg-light"
+                        className="form-control bg-light text-dark"
                         id="email"
                         name="email"
                         placeholder="Enter email"
@@ -105,7 +99,7 @@ export const RequestQuote = () => {
                     <label htmlFor="phone">Phone</label>
                     <input
                         type="text"
-                        className="form-control bg-light"
+                        className="form-control bg-light text-dark"
                         id="phone"
                         name="phone"
                         placeholder="Enter phone"
@@ -114,7 +108,7 @@ export const RequestQuote = () => {
                 <div className="form-group">
                     <label htmlFor="message">Message</label>
                     <textarea
-                        className="form-control bg-light"
+                        className="form-control bg-light text-dark"
                         id="message"
                         name="message"
                         rows="3"
