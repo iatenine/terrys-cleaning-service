@@ -31,14 +31,13 @@ export const RequestQuote = () => {
                 "user_b1sE1QHEdnbuzTIQ6wIH0"
             )
             .then(
-                (result) => {
-                    // Nothing to do here
+                () => {
+                    resetForm();
                 },
                 (error) => {
                     console.error(error.text);
                 }
             );
-        resetForm();
     };
 
     useEffect(() => {
@@ -103,6 +102,8 @@ export const RequestQuote = () => {
                         id="phone"
                         name="phone"
                         placeholder="Enter phone"
+                        onChange={handleChange}
+                        value={phone}
                     />
                 </div>
                 <div className="form-group">
@@ -113,6 +114,8 @@ export const RequestQuote = () => {
                         name="message"
                         rows="3"
                         placeholder="Enter message"
+                        onChange={handleChange}
+                        value={message}
                     />
                 </div>
                 <button

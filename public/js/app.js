@@ -5522,11 +5522,11 @@ var RequestQuote = function RequestQuote() {
     e.preventDefault();
     if (!validName || !validEmail) return; // Prevent submission if form is invalid
 
-    emailjs_com__WEBPACK_IMPORTED_MODULE_1__["default"].sendForm("service_98es1g8", "template_7kq84qp", form.current, "user_b1sE1QHEdnbuzTIQ6wIH0").then(function (result) {// Nothing to do here
+    emailjs_com__WEBPACK_IMPORTED_MODULE_1__["default"].sendForm("service_98es1g8", "template_7kq84qp", form.current, "user_b1sE1QHEdnbuzTIQ6wIH0").then(function () {
+      resetForm();
     }, function (error) {
       console.error(error.text);
     });
-    resetForm();
   };
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
@@ -5604,7 +5604,9 @@ var RequestQuote = function RequestQuote() {
           className: "form-control bg-light text-dark",
           id: "phone",
           name: "phone",
-          placeholder: "Enter phone"
+          placeholder: "Enter phone",
+          onChange: handleChange,
+          value: phone
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "form-group",
@@ -5616,7 +5618,9 @@ var RequestQuote = function RequestQuote() {
           id: "message",
           name: "message",
           rows: "3",
-          placeholder: "Enter message"
+          placeholder: "Enter message",
+          onChange: handleChange,
+          value: message
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
         type: "submit",
