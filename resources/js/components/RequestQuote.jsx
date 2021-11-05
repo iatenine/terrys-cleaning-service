@@ -81,7 +81,7 @@ export const RequestQuote = () => {
                     <label htmlFor="name">Name *</label>
                     <input
                         type="text"
-                        className="form-control"
+                        className="form-control bg-light"
                         id="name"
                         name="name"
                         placeholder="Enter name"
@@ -93,7 +93,7 @@ export const RequestQuote = () => {
                     <label htmlFor="email">Email *</label>
                     <input
                         type="email"
-                        className="form-control"
+                        className="form-control bg-light"
                         id="email"
                         name="email"
                         placeholder="Enter email"
@@ -105,7 +105,7 @@ export const RequestQuote = () => {
                     <label htmlFor="phone">Phone</label>
                     <input
                         type="text"
-                        className="form-control"
+                        className="form-control bg-light"
                         id="phone"
                         name="phone"
                         placeholder="Enter phone"
@@ -114,7 +114,7 @@ export const RequestQuote = () => {
                 <div className="form-group">
                     <label htmlFor="message">Message</label>
                     <textarea
-                        className="form-control"
+                        className="form-control bg-light"
                         id="message"
                         name="message"
                         rows="3"
@@ -123,12 +123,12 @@ export const RequestQuote = () => {
                 </div>
                 <button
                     type="submit"
-                    className="btn btn-success"
+                    className="btn btn-success w-100 mt-1"
                     disabled={validName === false || validEmail === false}
                 >
                     Submit
                 </button>
-                <button type="reset" className="btn btn-secondary">
+                <button type="reset" className="btn btn-secondary w-100 mt-1">
                     Reset
                 </button>
             </form>

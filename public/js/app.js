@@ -5579,7 +5579,7 @@ var RequestQuote = function RequestQuote() {
           children: "Name *"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
           type: "text",
-          className: "form-control",
+          className: "form-control bg-light",
           id: "name",
           name: "name",
           placeholder: "Enter name",
@@ -5593,7 +5593,7 @@ var RequestQuote = function RequestQuote() {
           children: "Email *"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
           type: "email",
-          className: "form-control",
+          className: "form-control bg-light",
           id: "email",
           name: "email",
           placeholder: "Enter email",
@@ -5607,7 +5607,7 @@ var RequestQuote = function RequestQuote() {
           children: "Phone"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
           type: "text",
-          className: "form-control",
+          className: "form-control bg-light",
           id: "phone",
           name: "phone",
           placeholder: "Enter phone"
@@ -5618,7 +5618,7 @@ var RequestQuote = function RequestQuote() {
           htmlFor: "message",
           children: "Message"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("textarea", {
-          className: "form-control",
+          className: "form-control bg-light",
           id: "message",
           name: "message",
           rows: "3",
@@ -5626,12 +5626,12 @@ var RequestQuote = function RequestQuote() {
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
         type: "submit",
-        className: "btn btn-success",
+        className: "btn btn-success w-100 mt-1",
         disabled: validName === false || validEmail === false,
         children: "Submit"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
         type: "reset",
-        className: "btn btn-secondary",
+        className: "btn btn-secondary w-100 mt-1",
         children: "Reset"
       })]
     })
