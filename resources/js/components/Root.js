@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Navbar from "./Navbar";
 import { About } from "./About";
 import { RequestQuote } from "./RequestQuote";
 import { Services } from "./Services";
 import { Footer } from "./Footer";
 import { Hero } from "./Hero";
+import { Header } from "./Header";
 
 function Root() {
     return (
         <div className="container">
-            <Navbar />
+            <Header />
             <Hero />
             <About />
             <Services />

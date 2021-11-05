@@ -49,14 +49,8 @@ export const RequestQuote = () => {
 
     useEffect(() => {
         setValidName(name.length > 0);
-        console.log(validName);
-        console.log(validEmail);
-        console.log(validEmail && validName);
-    }, [name]);
-
-    useEffect(() => {
         setValidEmail(emailRegex.test(email));
-    }, [email]);
+    }, [name, email]);
 
     const handleChange = (e) => {
         // Probably would have been more concise to use an object for this but oh well..
@@ -84,7 +78,7 @@ export const RequestQuote = () => {
         <div id="request">
             <form ref={form} onSubmit={sendEmail}>
                 <div className="form-group">
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">Name *</label>
                     <input
                         type="text"
                         className="form-control"
@@ -96,7 +90,7 @@ export const RequestQuote = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email">Email *</label>
                     <input
                         type="email"
                         className="form-control"
@@ -129,7 +123,7 @@ export const RequestQuote = () => {
                 </div>
                 <button
                     type="submit"
-                    className="btn btn-primary"
+                    className="btn btn-success"
                     disabled={validName === false || validEmail === false}
                 >
                     Submit

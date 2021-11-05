@@ -1,8 +1,5 @@
-// Body
-$body-bg: #f8fafc;
-
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-sans-serif: "Nunito", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
@@ -17,3 +14,35 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+// Body
+$body-bg: $blue; // Background color
+$body-color: white; // Standard text color
+
+li {
+    list-style: none;
+    display: inline;
+    padding-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li > a {
+    color: $body-color;
+}
+
+.nav {
+    display: inline;
+}
+
+.nav-link {
+    color: $body-color;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: $body-color;
+}
