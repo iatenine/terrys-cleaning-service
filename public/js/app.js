@@ -5601,7 +5601,7 @@ var RequestQuote = function RequestQuote() {
           children: "Phone"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("input", {
           type: "text",
-          className: "form-control bg-light",
+          className: "form-control bg-light text-dark",
           id: "phone",
           name: "phone",
           placeholder: "Enter phone"
@@ -5612,7 +5612,7 @@ var RequestQuote = function RequestQuote() {
           htmlFor: "message",
           children: "Message"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("textarea", {
-          className: "form-control bg-light",
+          className: "form-control bg-light text-dark",
           id: "message",
           name: "message",
           rows: "3",
